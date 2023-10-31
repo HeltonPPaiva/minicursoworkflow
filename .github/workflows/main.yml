@@ -1,7 +1,7 @@
 name: Meu Workflow Simples
 on:
   schedule:
-    - cron: '5 23 * * *'
+    - cron: '*/2 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,4 +9,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello World
-        run: echo "Hello, World!"
+        run: echo "Hello, World! começo de tudo"
